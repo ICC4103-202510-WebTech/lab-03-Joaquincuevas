@@ -14,5 +14,7 @@ Rails.application.routes.draw do
 
   # Defines the /about path route
   get "/about", to: "static_pages#about"
+  get "/contact", to: "static_pages#contact"
+  
   
 end

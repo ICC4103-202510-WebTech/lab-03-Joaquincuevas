@@ -1,5 +1,37 @@
-<h1> Home </h1>
-<p> Welcome to the Sample App </p>
 
-<%= link_to 'Home', root_path %>
-<%= link_to 'About', about_path %>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+
+    <a class="navbar-brand" >Navigation</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <%= link_to 'Home', root_path, class:"nav-link active" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'About', about_path, class:"nav-link"  %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'Contact', contact_path, class:"nav-link"  %>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="hero d-flex justify-content-center align-items-center flex-column">
+    <p> <br> </p>
+    <p> <br> </p>
+    <p> <br> </p>
+    <h1 class="display-4 fw-bold">Joaquin Cuevas Muñoz</h1>
+    <p class="lead">Civil Engineering in Computer Science student</p>
+    <h2 class="display-6 fw-bold">Welcome to the official Joaquin Cuevas web page</h2>
+    <p> <br> </p>
+    <a href="about" class="btn btn-primary btn-lg">Explore</a>
+</header>
+
+
+

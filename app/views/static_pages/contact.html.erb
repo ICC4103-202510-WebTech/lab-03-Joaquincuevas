@@ -1,0 +1,66 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navigation</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <%= link_to 'Home', root_path, class:"nav-link active" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'About', about_path, class:"nav-link"  %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'Contact', contact_path, class:"nav-link"  %>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<h1> &nbsp;&nbsp;&nbsp;Contact </h1>
+
+<form>
+  <div class="mb-3">
+    <label for="exampleInputName1" class="form-label">&nbsp;&nbsp;&nbsp;Name</label>
+    <input type="name" class="form-control" id="exampleInputName1">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">&nbsp;&nbsp;&nbsp;Email</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+   <div class="mb-3">
+    <label for="exampleInputMessage1" class="form-label">&nbsp;&nbsp;&nbsp;Message</label>
+    <textarea class="form-control" id="exampleInputMessage1" rows="3"></textarea>
+  </div>
+  <div id="liveAlertPlaceholder"></div>
+
+  <!-- Button trigger modal -->
+  <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"id="liveAlertBtn">
+    Submit
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Thank you for your message</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Stay tunned, we will contact you soon!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</form>
+
+
+
